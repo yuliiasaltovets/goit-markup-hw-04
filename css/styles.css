@@ -1,17 +1,18 @@
 :root {
-     --main-font: 'Roboto', sans-serif;
-     --background-clr: #ffffff;
-     --background-clr-ftr: #2F303A;
-     --blue-clr-element: #2196F3;
-     --main-clr-: #212121;
+    --main-font: 'Roboto', sans-serif;
+    --background-clr: #ffffff;
+    --background-clr-ftr: #2F303A;
+    --blue-clr-element: #2196F3;
+    --main-clr-: #212121;
 }
 
-body{
+body {
     font-family: var(--main-font),
-    sans-serif;
+        sans-serif;
     color: var(--main-clr-);
     margin: 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -37,14 +38,16 @@ header {
     border-bottom: 1px solid #ECECEC;
 }
 
-html{
-    box-sizing: border-box ;
+html {
+    box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
+
 /* контейнер */
 .container {
     width: 1200px;
@@ -67,9 +70,9 @@ html{
     margin-top: -30px;
 }
 
- .list-flex > .flex-element {
-     margin-left: 30px;
-     margin-top: 30px;
+.list-flex>.flex-element {
+    margin-left: 30px;
+    margin-top: 30px;
     width: 370px;
     box-sizing: border-box;
     border: 1px solid #eeeeee
@@ -88,13 +91,15 @@ html{
     padding-bottom: 94px;
 }
 
-.header{
+.header {
     background-color: var(--background-clr)
 }
+
 .hdr {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .list {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -103,35 +108,44 @@ html{
     list-style: none;
 
 }
+
 .list-work {
     padding-bottom: 94px;
 }
+
 .item-work {
     width: 370px;
     display: inline-block;
 }
+
 .item-asset {
     width: 270px;
     padding-right: auto;
     padding-left: auto;
 }
+
 .asset {
     justify-content: space-between;
 }
-.asset-section{
+
+.asset-section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .site-nav {
     display: flex;
 }
-.site-nav .list{
+
+.site-nav .list {
     display: flex;
     margin-right: 50px;
 }
+
 .site-nav .item {
     display: block;
 }
+
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
 }
@@ -139,6 +153,7 @@ html{
 .item {
     list-style: none;
 }
+
 /* лого */
 .logo {
     font-family: 'Raleway';
@@ -148,13 +163,14 @@ html{
     color: #2196F3;
     text-decoration: none;
     margin-right: 93px;
-    }
+}
+
 .logo2 {
     color: #000;
 }
 
 /* шапка */
-.site-nav .link{
+.site-nav .link {
     display: block;
     color: var(--main-clr-);
     font-weight: 500;
@@ -164,10 +180,12 @@ html{
     text-decoration: none;
     text-transform: capitalize;
 }
+
 .main-nav {
     display: flex;
     align-items: center;
 }
+
 .navigation {
     display: flex;
     align-items: center;
@@ -191,6 +209,7 @@ html{
     list-style: none;
     margin-right: 50px;
 }
+
 .list-contact {
     display: flex;
     align-items: center;
@@ -199,13 +218,14 @@ html{
     margin-bottom: 0px;
     padding-left: 0px;
 }
-.list-contact .link-contact + .link-contact {
+
+.list-contact .link-contact+.link-contact {
     margin-left: 50px;
 }
 
 /* кнопки */
 
-.btn-portfolio{
+.btn-portfolio {
     display: inline-block;
     background: #F5F4FA;
     border-radius: 4px;
@@ -221,17 +241,18 @@ html{
     padding: 6px 22px;
     border: none;
     margin-left: 8px;
-    
+
 }
-.btn-portfolio:focus{
+
+.btn-portfolio:focus {
     background-color: #2196F3;
     color: #FFFFFF;
 }
 
-.btn-portfolio:hover{
+.btn-portfolio:hover {
     background-color: #2196F3;
     color: #ffffff;
-    
+
 }
 
 
@@ -243,7 +264,7 @@ html{
     justify-content: center;
 }
 
-.element:hover{
+.element:hover {
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
@@ -252,6 +273,7 @@ html{
     color: var(--blue-clr-element);
     text-decoration: none;
 }
+
 .element {
     color: #757575;
     text-decoration: none;
@@ -271,23 +293,25 @@ html{
     align-items: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    
+
 }
+
 .flex-name {
     display: flex;
     justify-content: space-between;
 }
-.team-container {   
-    background-color:#F5F4FA;
+
+.team-container {
+    background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
 img {
     display: block;
-} 
+}
 
-.item-work :not(:last-child){
+.item-work :not(:last-child) {
     margin-right: 0px;
 }
 
@@ -298,12 +322,14 @@ img {
     letter-spacing: 0.06em;
     color: var(--main-clr-);
 }
+
 .item-option {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
 }
+
 .title-work {
     font-weight: 700;
     font-size: 36px;
@@ -314,6 +340,7 @@ img {
     margin-top: 0px;
     margin-bottom: 50px;
 }
+
 .title-team {
     font-weight: 700;
     font-size: 36px;
@@ -324,7 +351,8 @@ img {
     margin: 0;
     margin-bottom: 50px;
 }
-.list-name{
+
+.list-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -333,7 +361,8 @@ img {
     margin-top: 0px;
     margin-bottom: 10px;
 }
-.list-professional{
+
+.list-professional {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -341,6 +370,7 @@ img {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
 .command-name {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -351,6 +381,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
 .hero {
     background: #2F303A;
     margin-top: 0;
@@ -379,17 +410,18 @@ img {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    }
+}
 
-.btn-hero:hover{
+.btn-hero:hover {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     background-color: #2196F3;
     text-decoration: none;
-}   
-.btn-hero:focus{
+}
+
+.btn-hero:focus {
     background-color: #2196F3;
     border-radius: 4px;
     font-weight: 500;
@@ -413,6 +445,7 @@ img {
     margin-left: auto;
 
 }
+
 /* достоинства */
 
 .item-title {
@@ -442,30 +475,36 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.logo-footer{
-    color: #ffffff; 
+
+.logo-footer {
+    color: #ffffff;
 }
+
 address {
     font-style: normal;
 }
+
 .list-address {
-   padding-left: 0px;
-   margin-top: 20px;
-   margin-bottom: 0px;
-   text-align: left;
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: left;
 
 }
-.list-address > .item:not(:last-child) {
+
+.list-address>.item:not(:last-child) {
     margin-bottom: 9px;
 }
-.footer-item-address{
+
+.footer-item-address {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     text-decoration: none;
 }
-.footer-item-contacts{
+
+.footer-item-contacts {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
