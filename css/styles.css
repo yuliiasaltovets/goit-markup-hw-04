@@ -123,6 +123,13 @@ html {
     padding-right: auto;
     padding-left: auto;
 }
+/* иконки */
+.icon {
+    background-color:#F5F4FA;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
 
 .asset {
     justify-content: space-between;
