@@ -123,14 +123,18 @@ html {
     padding-right: auto;
     padding-left: auto;
 }
-/* иконки */
-.icon {
+/* про нас */
+/* .icon {
     background-color:#F5F4FA;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
+} */
+.asset-link {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
-
 .asset {
     justify-content: space-between;
 }
@@ -229,7 +233,23 @@ html {
 .list-contact .link-contact+.link-contact {
     margin-left: 50px;
 }
+.main-cntct {
+    display: flex;
+    align-items: center;
+}
 
+.element { 
+    display: flex;
+    align-items: center;
+    fill: #757575;
+}
+.contact {
+    margin-right: 10px;
+}
+.contact:hover,
+.contact:focus {
+    fill: #2196F3;
+}
 /* кнопки */
 
 .btn-portfolio {
@@ -375,14 +395,48 @@ img {
     letter-spacing: 0.03em;
     color: #757575;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
 }
 
 .command-name {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
 
+
+}
+.socials-icon {
+    fill:#AFB1B8;
+}
+.socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+.socials-link:hover .socials-icon {
+    fill: #FFFFFF;
+}
+.socials-link:focus .socials-icon {
+    fill: #FFFFFF;
+}
+
+.socials-link:hover{
+    background-color: #2196F3;
+}
+.socials-link:focus {
+    background-color: #2196F3;
+}
 /* главная */
 .h1 {
     margin-left: auto;
@@ -475,7 +529,54 @@ img {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+/* постоянные клиенты */
+.client-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 94px;
+    padding-left: auto;
+    padding-bottom: 94px;
+    padding-right: auto;
+    text-align: center;
+}
+.title-client {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.clients-item {
+    display: inline-block;
+}
 
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    margin-right: 30px;
+    
+}
+.clients-link:not(:last-child) {
+    margin-right: 0px;
+}
+.clients-link:focus,
+.clients-link:hover {
+    border-color: #2196F3;
+}
+.clients-icon:focus,
+.clients-icon:hover { 
+    fill: #2196F3;
+}
+.clients-icon {
+    fill: #757575;
+}
 /* футер */
 .footer {
     background: var(--background-clr-ftr);
