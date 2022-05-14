@@ -221,30 +221,46 @@ html {
     margin-left: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-left: 0px;
 }
-
-.list-contact .link-contact+.link-contact {
+.link-contact {
+    margin-right: 30px ;
+}
+/* .list-contact .link-contact+.link-contact {
     margin-left: 50px;
-}
+} */
 .main-cntct {
     display: flex;
     align-items: center;
 }
 
+
 .element { 
     display: flex;
     align-items: center;
     fill: #757575;
+
+}
+.element:focus {
+    color: #2196F3;
 }
 .contact {
     margin-right: 10px;
 }
-.contact:hover,
-.contact:focus {
+.cntct:hover {
     fill: #2196F3;
 }
-
+.cntct:focus {
+    fill: #2196F3;
+}
+.element:hover .contact {
+    fill: #2196F3;
+}
+.element:focus .contact {
+    fill: #2196F3;
+}
+.mail-tell {
+    margin-right: 10px;
+}
 /* кнопки */
 
 .btn-portfolio {
@@ -561,7 +577,7 @@ img {
     margin-bottom: 50px;
 }
 .clients-item {
-    display: inline-block;
+    
 }
 .clients {
     display: flex;
@@ -581,16 +597,26 @@ img {
 .clients-link:not(:last-child) {
     margin-right: 0px;
 }
-.clients-link:focus,
+/* .clients-link:focus,
 .clients-link:hover {
     border-color: #2196F3;
 }
 .clients-icon:focus,
 .clients-icon:hover { 
     fill: #2196F3;
+} */
+.clients-link:hover .clients-icon {
+    fill: #2196F3;
 }
+.clients-link:focus .clients-icon {
+    fill: #2196F3;
+}
+.clients-link:hover {
+    border-color: #2196F3;
+}
+
 .clients-icon {
-    fill: #757575;
+    fill: #AFB1B8;
 }
 /* футер */
 .footer {
