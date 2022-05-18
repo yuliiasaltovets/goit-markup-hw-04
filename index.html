@@ -24,7 +24,8 @@
                 <a class="logo" href="./index.html">Web<span class="logo2">Studio</span></a>
                 <!--Навигация-->
                 <ul class="site-nav list">
-                    <li class="item"><a class="link element" href="./index.html"><span class="item-link">Студия</span></a></li>
+                    <li class="item">
+                        <a class="link element" href="./index.html"><span class="item-link">Студия</span></a></li>
                     <li class="item"><a class="link element" href="./portfolio.html">Портфолио</a></li>
                     <li class="item"><a class="link element" href="">Контакты</a></li>
                 </ul>
@@ -49,7 +50,7 @@
         <section class="hero main-photo">
             <div class="container overlay">
                 <h1 class="style-title">Эффективные решения </br> для вашего бизнеса</h1>
-                <button class="btn-hero" type="button">Заказать услугу</button>
+                <button data-modal-open class="btn-hero" type="button">Заказать услугу</button>
             </div>
         </section>
         </div>
@@ -102,20 +103,33 @@
                     </li>
                 </ul>
             </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close class="modal-btn">
+                        <svg class="btn-x" width="30" heidht="30">
+                            <use href="./images/icons.svg#icon-Vector">
+                            </use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </section>
         <section class="work">
             <div class="container">
-                <h2 class="title-work">Чем мы занимаемся</h2>
+                <h2 class="title-work" >Чем мы занимаемся</h2>
                 <div class="list-work">
                     <ul class="list asset">
                         <li class="item item-work">
-                            <img class="" src="./images/img.jpg" alt="пример1" width="370">
+                            <img class="" src="./images/img.jpg" alt="пример1" width="370" >
+                            <p class="item-work-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                         </li>
                         <li class="item item-work">
                             <img class="" src="./images/img1.jpg" alt="пример2" width="370">
+                            <p class="item-work-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                         </li>
                         <li class="item item-work">
                             <img class="" src="./images/img2.jpg" alt="пример3" width="370">
+                            <p class="item-work-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                         </li>
                     </ul>
                 </div>
@@ -388,7 +402,7 @@
         </div>
        </div>
     </footer>
-
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
