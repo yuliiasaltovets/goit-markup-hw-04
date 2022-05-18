@@ -63,18 +63,27 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 .modal-btn {
     position: absolute;
     top: 0;
     right: 0;
+    height: 30px;
+    width: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
 }
 
 .modal {
@@ -126,6 +135,7 @@ html {
 }
 .flex-element {
     position: relative;
+ 
 }
 
 .flex-element-text {
@@ -151,6 +161,11 @@ html {
     padding-bottom: 63px;
     padding-left: 24px;     
 }
+
+        /* transition-property: var(--blue-clr-element);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
 
 .flex-element-text:hover {
     opacity: 1;
